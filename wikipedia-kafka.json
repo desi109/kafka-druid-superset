@@ -1,0 +1,507 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "wikipedia-kafka",
+                "description": null,
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{}\", \"remote_id\": 7}",
+                "position_json": "{\"CHART-58ncVGWJ__\":{\"children\":[],\"id\":\"CHART-58ncVGWJ__\",\"meta\":{\"chartId\":84,\"height\":80,\"sliceName\":\"Number of edits per country between September 12 and 13, 2015\",\"width\":7},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-Vb80r7RS7\"],\"type\":\"CHART\"},\"CHART-TPKeh2wfXs\":{\"children\":[],\"id\":\"CHART-TPKeh2wfXs\",\"meta\":{\"chartId\":82,\"height\":80,\"sliceName\":\"Top 10 most-edited articles between September 12 and 13, 2015\",\"width\":5},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-Vb80r7RS7\"],\"type\":\"CHART\"},\"CHART-wtJTdamT8K\":{\"children\":[],\"id\":\"CHART-wtJTdamT8K\",\"meta\":{\"chartId\":83,\"height\":90,\"sliceName\":\"Number of edits per channel between September 12 and 13, 2015\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"ROW-vWMIolDO5c\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-Vb80r7RS7\",\"ROW-vWMIolDO5c\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"wikipedia-kafka\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-Vb80r7RS7\":{\"children\":[\"CHART-TPKeh2wfXs\",\"CHART-58ncVGWJ__\"],\"id\":\"ROW-Vb80r7RS7\",\"meta\":{\"0\":\"ROOT_ID\",\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"},\"ROW-vWMIolDO5c\":{\"children\":[\"CHART-wtJTdamT8K\"],\"id\":\"ROW-vWMIolDO5c\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"ROW\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "wikipedia-kafka",
+                            "datasource_type": "druid",
+                            "id": 82,
+                            "params": "{\"adhoc_filters\": [], \"bar_stacked\": false, \"bottom_margin\": \"auto\", \"color_scheme\": \"bnbColors\", \"columns\": [], \"contribution\": false, \"datasource\": \"1__druid\", \"druid_time_origin\": null, \"granularity\": null, \"groupby\": [\"page\"], \"label_colors\": {}, \"metrics\": [\"count\"], \"order_bars\": false, \"reduce_x_ticks\": false, \"row_limit\": 10, \"show_bar_value\": false, \"show_controls\": false, \"show_legend\": true, \"slice_id\": 82, \"time_range\": \"2015-09-12T00:00:00 : 2015-09-13T00:00:00\", \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_axis_label\": \"\", \"x_ticks_layout\": \"auto\", \"y_axis_format\": \"SMART_NUMBER\", \"y_axis_label\": \"\", \"remote_id\": 82, \"datasource_name\": \"wikipedia-kafka\", \"schema\": null, \"database_name\": \"loadForever\"}",
+                            "slice_name": "Top 10 most-edited articles between September 12 and 13, 2015",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "wikipedia-kafka",
+                            "datasource_type": "druid",
+                            "id": 83,
+                            "params": "{\"adhoc_filters\": [], \"align_pn\": false, \"all_columns\": [], \"color_pn\": true, \"datasource\": \"1__druid\", \"druid_time_origin\": null, \"granularity\": \"PT1H\", \"groupby\": [\"channel\"], \"include_search\": false, \"include_time\": false, \"metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"added\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": null, \"optionName\": \"_col_added\", \"type\": \"LONG\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(added)\", \"optionName\": \"metric_sr4ubt7jsys_a6cffk8fqih\", \"sqlExpression\": null}], \"order_by_cols\": [], \"order_desc\": true, \"page_length\": 0, \"percent_metrics\": [{\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"added\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": null, \"optionName\": \"_col_added\", \"type\": \"LONG\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(added)\", \"optionName\": \"metric_wg8d9x52b38_t6kc5jl9s78\", \"sqlExpression\": null}], \"row_limit\": 10000, \"slice_id\": 83, \"table_filter\": false, \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"time_range\": \"2015-09-12T00:00:00 : 2015-09-13T00:00:00\", \"timeseries_limit_metric\": {\"aggregate\": \"SUM\", \"column\": {\"column_name\": \"added\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": null, \"optionName\": \"_col_added\", \"type\": \"LONG\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"hasCustomLabel\": false, \"label\": \"SUM(added)\", \"optionName\": \"metric_p5mhpdn2wb9_2yquct4pzua\", \"sqlExpression\": null}, \"url_params\": {}, \"viz_type\": \"table\", \"remote_id\": 83, \"datasource_name\": \"wikipedia-kafka\", \"schema\": null, \"database_name\": \"loadForever\"}",
+                            "slice_name": "Number of edits per channel between September 12 and 13, 2015",
+                            "viz_type": "table"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "wikipedia-kafka",
+                            "datasource_type": "druid",
+                            "id": 84,
+                            "params": "{\"adhoc_filters\": [], \"country_fieldtype\": \"name\", \"datasource\": \"1__druid\", \"druid_time_origin\": null, \"entity\": \"countryName\", \"granularity\": null, \"max_bubble_size\": \"50\", \"metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"added\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": null, \"type\": \"LONG\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"COUNT(added)\", \"optionName\": \"metric_dagxif92dar_6l0l5sl4s43\", \"sqlExpression\": null}, \"row_limit\": 50000, \"secondary_metric\": {\"aggregate\": \"COUNT\", \"column\": {\"column_name\": \"added\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 1, \"is_dttm\": null, \"type\": \"LONG\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"fromFormData\": true, \"hasCustomLabel\": false, \"label\": \"COUNT(added)\", \"optionName\": \"metric_gwc0fdlqx3_m93c1jcexng\", \"sqlExpression\": null}, \"show_bubbles\": true, \"slice_id\": 84, \"time_range\": \"2015-09-12T00:00:00 : 2015-09-13T00:00:00\", \"url_params\": {}, \"viz_type\": \"world_map\", \"remote_id\": 84, \"datasource_name\": \"wikipedia-kafka\", \"schema\": null, \"database_name\": \"loadForever\"}",
+                            "slice_name": "Number of edits per country between September 12 and 13, 2015",
+                            "viz_type": "world_map"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__DruidDatasource__": {
+                "cache_timeout": null,
+                "cluster_name": "loadForever",
+                "columns": [
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "added",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": true,
+                            "type": "LONG",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "channel",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "cityName",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "comment",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "countryIsoCode",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "countryName",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "deleted",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": true,
+                            "type": "LONG",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "delta",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": true,
+                            "type": "LONG",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "isAnonymous",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "isMinor",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "isNew",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "isRobot",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "isUnpatrolled",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 13,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "metroCode",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 14,
+                            "is_active": true,
+                            "type": "LONG",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "namespace",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 15,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "page",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 16,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "regionIsoCode",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 17,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "regionName",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 18,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__DruidColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "column_name": "user",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "datasource_id": 1,
+                            "description": null,
+                            "dimension_spec_json": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 19,
+                            "is_active": true,
+                            "type": "STRING",
+                            "verbose_name": null
+                        }
+                    }
+                ],
+                "datasource_name": "wikipedia-kafka",
+                "default_endpoint": null,
+                "description": null,
+                "filter_select_enabled": true,
+                "is_hidden": false,
+                "metrics": [
+                    {
+                        "__DruidMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2020-01-14T05:20:00"
+                            },
+                            "d3format": null,
+                            "datasource_id": 1,
+                            "description": null,
+                            "id": 1,
+                            "json": "{\"type\": \"count\", \"name\": \"count\"}",
+                            "metric_name": "count",
+                            "metric_type": "count",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"loadForever\"}"
+            }
+        }
+    ]
+}
